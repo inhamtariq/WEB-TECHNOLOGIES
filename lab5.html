@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 05</title>
+    <link rel="stylesheet" href="./lab5.css">
+    <style>
+        #one {
+    color: navy;
+    text-decoration: underline;
+    text-align: center;
+
+}
+p {
+    background-color: rgb(17, 198, 0);
+    text-align: center;
+    width: 500px;
+    margin-left: 400px;   
+}
+.item1{
+    margin-left: 0px;
+}
+h2,
+p,
+li {
+    border: solid 2px rgb(56, 21, 153); }
+
+div>p {
+    color: blue;
+}
+
+div>ul>li {
+    color: rgb(167, 105, 206); }
+item {
+    background-color: yellow;
+    font-style: italic;
+}
+ul li:first-child {
+    font-weight: bold;
+}
+a:hover {
+    color: red;
+}
+p::first-letter {
+    font-size: 24px;
+    color: rgb(13, 226, 13);
+}
+img {
+    border: 2px solid black;
+    width: 200px;
+}
+ul> li{
+    width: 100px;
+}
+h2{
+    width: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <h1 id="one"> Experiment 5: CSS Selectors</h1>
+    <p class="item">In this experiment, we will practice using different <b>CSS selectors</b> to style HTML
+        elements. Selectors are powerful tools that allow developers to apply styles to elements
+        based on their type, class, id,
+        position in the document, or even user interaction. 
+    </p>
+    <img src="./image/pic1.jpeg" alt="this is image"><br>
+    <a href="./LAB2.html">Lab 02</a>
+    <h2> Grouping selector</h2>
+    <p class="item1">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Quam exercitationem aliquid
+         debitis harum at consectetur
+        tempore impedit fugit distinctio dolorem! 
+        Doloribus pariatur quidem officia maiores illo at commodi suscipit earum!
+    </p>
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+    <div>
+        <h2>Decent selector</h2>
+        <p class="item1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Necessitatibus nam aut, repellendus cumque voluptatibus esse 
+             ipsam, tempora ea dolorum dolores aliquam amet mollitia
+             impedit dolore delectus nulla optio hic repudiandae!
+        </p>
+</div>
+    <div>
+        <h2>Child Selector:</h2>
+        <ul>
+            <li>child 1</li>
+            <li>child 2</li>
+        </ul>
+    </div>
+</body>
+
+</html>
