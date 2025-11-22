@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment 7: JavaScript Fundamentals</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+
+  <h1>Experiment 7: JavaScript Fundamentals</h1>
+  <h2>Course: CSS-336 (2+1)</h2>
+  <p>Semester: Fall 2025</p>
+
+  <!-- Task 1 Button -->
+  <button onclick="task1()">Task 1: Prompt & Alert</button>
+  <br><br>
+
+  <!-- Task 2 Button -->
+  <button onclick="task2()">Task 2: Arithmetic & Comparison</button>
+
+  <script>
+    // Code Snippet 1: Displaying Messages
+    alert("Welcome to JavaScript!");
+    console.log("Hello Students!");
+
+    // Code Snippet 2: Variables and Data Types
+    var name = "Ali";
+    var age = 20;
+    var isStudent = true;
+    var marks;
+    var value = null;
+
+    console.log(typeof name);       // string
+    console.log(typeof age);        // number
+    console.log(typeof isStudent);  // boolean
+    console.log(typeof value);      // object (null is treated as object)
+
+    // Code Snippet 3: String and Arithmetic Operations
+    var country = "Pakistan";
+    console.log("I love " + country);
+    console.log(country.slice(0, 4)); // "Paki"
+    var a = 10, b = 3;
+    console.log("Sum:", a + b);
+    console.log("Modulus:", a % b);
+    console.log("Comparison:", a > b);
+
+    // Lab Task 1
+    function task1() {
+      let studentName = prompt("Enter your Name:");
+      let regID = prompt("Enter your Registration ID:");
+      alert("Name: " + studentName + "\nRegistration ID: " + regID);
+    }
+
+    // Lab Task 2
+    function task2() {
+      let num1 = parseFloat(prompt("Enter first number:"));
+      let num2 = parseFloat(prompt("Enter second number:"));
+
+      let sum = num1 + num2;
+      let diff = num1 - num2;
+      let prod = num1 * num2;
+      let quot = num1 / num2;
+      let comp = num1 > num2;
+
+      alert(
+        "Results:\n" +
+        "Sum: " + sum + "\n" +
+        "Difference: " + diff + "\n" +
+        "Product: " + prod + "\n" +
+        "Quotient: " + quot + "\n" +
+        "Comparison (num1 > num2): " + comp
+      );
+    }
+  </script>
+</body>
+</html>
