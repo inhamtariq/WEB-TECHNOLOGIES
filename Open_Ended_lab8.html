@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiment 8 - Interactive Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button, #box {
+      margin: 20px;
+      padding: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #box {
+      display: inline-block;
+      background-color: lightblue;
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+    }
+    #reflection {
+      margin-top: 40px;
+      font-style: italic;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive WebPage</h1>
+
+  <button id="colorBtn">Change Background Color</button>
+  <button id="sizeBtn">Increase Size</button>
+  <button id="moveBtn">Move Me</button>
+  <div id="box">Click Me to Hide</div>
+
+  <p id="reflection">
+    Designing this webpage taught me how event listeners connect user actions to dynamic changes.
+    Using <code>this</code> helped me understand how each element can control its own behavior.
+  </p>
+
+  <script>
+    // Change background color
+    document.getElementById("colorBtn").addEventListener("click", function() {
+      document.body.style.backgroundColor =
+        "#" + Math.floor(Math.random()*16777215).toString(16);
+    });
+
+    // Increase button size using 'this'
+    document.getElementById("sizeBtn").addEventListener("click", function() {
+      this.style.transform = "scale(1.5)";
+      this.style.backgroundColor = "lightgreen";
+    });
+
+    // Move button randomly
+    document.getElementById("moveBtn").addEventListener("click", function() {
+      this.style.position = "relative";
+      this.style.left = Math.floor(Math.random()*200) + "px";
+    });
+
+    // Hide box when clicked
+    document.getElementById("box").addEventListener("click", function() {
+      this.style.display = "none";
+    });
+  </script>
+</body>
+</html>
