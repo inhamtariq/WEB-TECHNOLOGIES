@@ -1,57 +1,85 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        *{
-            background-color: palegoldenrod;
-        }
-        div{
-            border: 3px solid seagreen;
-             display: flex;
-              flex-direction: column;
-              justify-content: center;
-              
-        }
-        ol{
-            list-style-position: inside;
-           text-align: center;
-        }
-        li{
-            margin-top: 12px;
-        }
-    </style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 40px; 
+        line-height: 1.6;
+        background-color: palegoldenrod;
+    }
+    h1 { 
+        color:purple; 
+        text-align: center; 
+    }
+    img{
+        margin-left: 480px;
+    }
+    h2, h3 { 
+        text-align: center; 
+    }
+    ol li{ 
+        margin: 9px;
+    }
+     { 
+        text-decoration: none; 
+        color: darkblue; 
+    }
+    a:hover { 
+        text-decoration: underline; 
+    }
+    li{
+      background-color: lightskyblue;
+    }
+    #center{text-align: center;}
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border:3px rgb(14, 138, 14) solid;
+      height: 70vh;
+    }
+    .right{
+      align-self: flex-end;
+    }
+     @media screen and (max-width: 800px){
+      body{
+        background-color:palegoldenrod;
+      }
+      
+    }
+    @media screen and (max-width: 500px){
+      body{
+        background-color: blue;
+      }
+    }
+
+</style>
+
 </head>
 <body>
-    
-    <h1 style="text-align: center;">WEB Technologies Manual</h1>
-    <img style="margin-left: 530px;" src="department logo.jpeg" alt="LOGO">
-    <h2 style="text-align: center;">Course : CSS-336 (2+1)</h2>
-    <p style="text-align: center;">Semester FALL 2025   </p>
-    <h3 style="text-align: center;"><u>Name :</u> INHAM TARIQ   &emsp; &emsp; <u>Regestration No :</u> FA22-BCE-042</h3>
-    <p>Following are the list of Exprement</p>
+   <h1>Web Technologies </h1>
+   <img src="./image/department logo.jpg" alt="logo">
+   <h2>Course: CSS-336 (2+1)</h2>
+   <p id="center">Semester: Fall 2025</p>
+    <h3><u>Name:</u> Inham Tariq &emsp; &emsp; <u>Registration ID:</u> FA22-BCE-042 </h3>
+     <p>Following are the list of Labs:</p>
+     <div>
+       <ol class="container">
+        <li><a href="./lab1.html">Experiment 1</a></li>
+        <li><a href="./LAB2.html">Experiment 2</a></li>
+        <li><a href="./lab3.html">Experiment 3</a></li>
+        <li><a href="./lab4.html">Experiment 4 </a> </li>
+        <li class="right"><a href="./lab5.html">Experiment 5</a></li>
+        <li><a href="./lab6.html">Experiment 6 </a> </li>
+        <li><a href="./lab7.html">Experiment 7 </a> </li>
+        <li><a href="./Open_Ended_lab8.html">Experiment 8 </a> </li>
+        <li><a href="./lab9.html">Experiment 9 </a> </li>
+        <li><a href="./lab10.html">Experiment 10 </a> </li>
 
-    <div> 
-        <ol>
-    <li><a href="lab1.html">Exprement 01</a></li>
-    <li><a href="LAB2.html">Exprement 02</a></li>
-    <li><a href="lab3.html">Exprement 03</a></li>
-    <li><a href="lab4.html">Exprement 04</a></li>
-    <li style="text-align: right;"><a href="lab5.html">Exprement 05</a></li>
-    <li><a href="./lab6.html">Experiment 6 </a> </li>
-    <li><a href="./lab7.html">Experiment 7 </a> </li>
-    <li><a href="./Open_Ended_lab8.html">Open Ended Experiment 8 </a> </li>
-
-</ol>
-    
-</div>
+       </ol>
+     </div>
 </body>
 </html>
-
-
-
-
-
-
